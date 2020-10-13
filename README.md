@@ -16,7 +16,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Vagrant boilerplate file with init setups and default installations. This vagrantfile will configure and run an Ubuntu VM.
+Vagrant boilerplate file with init setups and default installations. This vagrantfile will configure and run an Ubuntu VM with a MEAN software stack.
 
 ### Built With
 This project was built with:
