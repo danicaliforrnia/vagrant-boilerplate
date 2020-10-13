@@ -31,10 +31,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-1. You should have Vagrant installed
-*[https://www.vagrantup.com/](https://www.vagrantup.com/)
-2. You should have VirtualBox installed:
-*[https://www.virtualbox.org/](https://www.virtualbox.org/)
+1. You should have Vagrant installed: [https://www.vagrantup.com/](https://www.vagrantup.com/)
+2. You should have VirtualBox installed: [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
 ### Installation
 
