@@ -1,0 +1,14 @@
+# Update packages
+apt update
+
+# Upgrade packages
+apt upgrade
+
+echo "--------------------------------------------------------------------------------------"
+echo "provisioning..."
+
+cd /tmp
+ls
+sh /tmp/git.sh
+sh /tmp/nodejs.sh
+sh /tmp/mongodb.sh

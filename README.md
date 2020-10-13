@@ -31,7 +31,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-You should have Vagrant installed.
+1. You should have Vagrant installed
+*[https://www.vagrantup.com/](https://www.vagrantup.com/)
+2. You should have VirtualBox installed:
+*[https://www.virtualbox.org/](https://www.virtualbox.org/)
 
 ### Installation
 
@@ -39,7 +42,7 @@ You should have Vagrant installed.
 ```sh
 git clone https://github.com/danicaliforrnia/vagrant-boilerplate.git
 ```
-2. Edit vagrantfile or boostrap.sh if you want to customize VM.
+2. Edit vagrantfile or sh files if you want to customize VM.
 3. Run
 ```sh
 vangrant up
