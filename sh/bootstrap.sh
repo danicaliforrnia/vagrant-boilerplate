@@ -7,9 +7,6 @@ apt upgrade
 echo "--------------------------------------------------------------------------------------"
 echo "provisioning..."
 
-cd /vagrant
-ls
-
 sh /vagrant/sh/core.sh
 sh /vagrant/sh/git.sh
 sh /vagrant/sh/nodejs.sh
