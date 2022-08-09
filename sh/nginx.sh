@@ -1,8 +1,10 @@
+#!/bin/bash
+
 echo "--------------------------------------------------------------------------------------"
 echo "Installing NGINX..."
 
 # Update packages
 apt update
 
-# Git 
+# Install package
 apt install -y nginx

@@ -16,7 +16,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Vagrant boilerplate file with init setups and default installations. This vagrantfile will configure and run an Ubuntu VM with a MEAN software stack.
+Vagrant boilerplate to create VMs with MEAN stack installed with Ubuntu 20.04 as OS.
 
 ### Built With
 This project was built with:
@@ -37,23 +37,42 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 1. Clone the repo
-```sh
-git clone https://github.com/danicaliforrnia/vagrant-boilerplate.git
-```
+    ```sh
+    git clone https://github.com/danicaliforrnia/vagrant-boilerplate.git
+    ```
+
 2. Edit vagrantfile or sh files if you want to customize VM.
+
 3. Run
-```sh
-vangrant up
-```
+    ```sh
+    vagrant up
+    ```
+
 4. If you want to access to the VM, run
-```sh
-vangrant ssh
-```
+    ```sh
+    vagrant ssh
+    ```
+
+## Usage
+
+### Directory Structure
+
+The project has the following structure:
+
+    vagrant-boilerplate
+    ├── Vagrantfile
+    ├── sh
+        ├── bootstrap.sh
+        ├── ...
+
+- vagrant-boilerplate:
+- sh:
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/amazing_feature`)
@@ -70,5 +89,5 @@ Distributed under the MIT License.
 ## Contact
 
 Daniel Stefanelli -
-[My portfolio](https://www.daniel.stefanelli.h@gmail.com) - 
+[My Repos](https://github.com/danicaliforrnia) - 
 [daniel-stefanelli Linkedin](https://www.linkedin.com/in/daniel-stefanelli/)

@@ -1,0 +1,6 @@
+hostname: MEAN-vm
+memory: 2048
+cpu: 2
+guest_ip: 80
+host_ip: 8080
+private_ip: 192.168.59.50
