@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   end
 
   # Shared Directories Settings
-  # config.vm.synced_folder settings['host_path'], settings['guest_path']
+  config.vm.synced_folder settings['host_path'], settings['guest_path']
 
   # Network Settings
    config.vm.network "forwarded_port", guest: settings['guest_ip'], host: settings['host_ip']
