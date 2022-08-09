@@ -1,24 +1,32 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure("2") do |config|
+require 'yaml'
+settings = YAML.load_file './settings.yml'
 
+Vagrant.configure("2") do |config|
   # Box	
-  config.vm.box = "ubuntu/trusty64"
-  
-  # Provider
-  config.vm.provider "virtualbox" do |vb|
-    # vb.memory = 2048
-    # vb.cpus = 4
+  config.vm.box = "bento/ubuntu-20.04"
+  config.vm.hostname = settings['hostname']
+
+  # Guest Additions
+  if Vagrant.has_plugin?("vagrant-vbguest") then
+    config.vbguest.auto_update = false
   end
 
-  # Network Settings
-   config.vm.network "forwarded_port", guest: 80, host: 8080
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  # Provider
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = settings['memory']
+    vb.cpus = settings['cpu']
+  end
 
-  # Folder Settings
-  #config.vm.synced_folder "./sh", "/tmp", :nfs => { :mount_options => ["dmode=777", "fmode=666"] }
-  
+  # Shared Directories Settings
+  # config.vm.synced_folder settings['host_path'], settings['guest_path']
+
+  # Network Settings
+   config.vm.network "forwarded_port", guest: settings['guest_ip'], host: settings['host_ip']
+   config.vm.network "private_network", ip: settings['private_ip']
+
+  # Provisioning
   config.vm.provision "shell", path: "sh/bootstrap.sh"
-  
 end
