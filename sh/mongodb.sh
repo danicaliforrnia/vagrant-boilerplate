@@ -1,8 +1,10 @@
+#!/bin/bash
+
 echo "--------------------------------------------------------------------------------------"
 echo "Installing MongoDB..."
 
 # Update packages
 apt update
 
-# MongoDB
+# Install package
 apt install -y mongodb
