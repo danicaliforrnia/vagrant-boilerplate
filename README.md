@@ -22,6 +22,7 @@ Vagrant boilerplate to create VMs with MEAN stack installed with Ubuntu 20.04 as
 This project was built with:
 
 * [Vagrant 2.2.10](https://www.vagrantup.com/)
+* [VirtualBox 6.1](https://www.virtualbox.org/)
 
 <!-- GETTING STARTED -->
 
@@ -41,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
     git clone https://github.com/danicaliforrnia/vagrant-boilerplate.git
     ```
 
-2. Edit vagrantfile or sh files if you want to customize VM.
+2. Edit vagrantfile, settings.yml or sh files if you want to customize VM.
 
 3. Run
     ```sh
@@ -61,15 +62,15 @@ The project has the following structure:
 
     vagrant-boilerplate
     ├── Vagrantfile
+    ├── settings.yml
     ├── sh
         ├── bootstrap.sh
         ├── ...
 
-- vagrant-boilerplate:
-- sh:
+- Vagrantfile: main file with the description of the VM to create using vagrant.
+- settings.yml: YAML file with the properties that the Vagrantfile will use.
+- sh: directory with the scripts to provision the VM using the shell.
 
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -80,14 +81,10 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/amazing_feature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
 
-<!-- CONTACT -->
 ## Contact
 
-Daniel Stefanelli -
-[My Repos](https://github.com/danicaliforrnia) - 
-[daniel-stefanelli Linkedin](https://www.linkedin.com/in/daniel-stefanelli/)
+Daniel Stefanelli -[Repositories](https://github.com/danicaliforrnia) -[LinkedIn](https://www.linkedin.com/in/daniel-stefanelli/)
